@@ -37,7 +37,7 @@ public abstract class Handler {
             List<Player> players = sender.getServer().matchPlayer(args[index]);
 
             if (players.isEmpty()) {
-                sender.sendMessage("Could not find player with the name: " + args[index]);
+                sender.sendMessage("Nincs játékos ilyen néven: " + args[index]);
                 return null;
             } else {
                 return players.get(0);
